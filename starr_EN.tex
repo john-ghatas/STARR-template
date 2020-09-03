@@ -1,0 +1,91 @@
+\documentclass{paper}
+\usepackage[english]{babel}
+\usepackage{vhistory}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=red,
+    linktoc=all
+}
+
+\newcommand{\latest}{1.0}
+\newcommand{\starrblock}[7]{\subsection{#1}{
+    Product I worked on: #2
+    \paragraph{S}{
+        #3
+    }
+    \paragraph{T}{
+        #4
+    }
+    \paragraph{A}{
+        #5
+    }
+    \paragraph{R}{
+        #6
+    }
+    \paragraph{R}{
+        #7
+    }
+}}
+
+\title{STARR Reflection: <Title assignment> \\
+\large Studentnummer: <Studentnumber> \\
+       E-Mail: <E-Mail>}
+\author{<Author>}
+
+\begin{document}
+% Title page
+\maketitle
+\mbox{}
+\vfill
+\textbf{Version: \latest}
+\newpage
+
+% Changes
+\begin{versionhistory}
+    \vhEntry{\latest}{<Date>}{<Author>}{<Notes>}
+\end{versionhistory}
+\newpage
+
+% Contents  
+\tableofcontents
+\newpage
+
+% STARRS
+% Example command:  \starrblock{Sub-competence}{Product [X, Y, \dots]}{Situation}{Task}{Activity}{Result}{Reflection}
+\section{Communicative ability}{
+ \starrblock{Sub-competence}{Product [X, Y, \dots]}{Situation}{Task}{Activity}{Result}{Reflection} 
+ }
+
+\section{Professional craftsmanship}{
+
+ }
+
+\section{Investigative ability}{
+
+ }
+
+\section{Learning ability}{
+
+ }
+
+\section{Professional ethics and social orientation}{
+
+ }
+
+\section{Collaboration}{
+
+ }
+% Bijlagen (foto's etc)
+\section{Bijlagen}{
+
+ }
+
+\end{document}
+
