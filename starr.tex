@@ -1,0 +1,91 @@
+\documentclass{paper}
+\usepackage[dutch]{babel}
+\usepackage{vhistory}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{ragged2e}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=red,
+    linktoc=all
+}
+
+\newcommand{\latest}{1.0}
+\newcommand{\starrblock}[7]{\subsection{#1}{
+    Beroepsproduct waar ik aan gewerkt heb: #2
+    \paragraph{S}{
+        #3
+    }
+    \paragraph{T}{
+        #4
+    }
+    \paragraph{A}{
+        #5
+    }
+    \paragraph{R}{
+        #6
+    }
+    \paragraph{R}{
+        #7
+    }
+}}
+
+\title{STARR Reflectie: <Naam opdracht> \\
+\large Studentnummer: <StudentNummer> \\
+       E-Mail: <E-Mail>}
+\author{<Author>}
+
+\begin{document}
+% Title page
+\maketitle
+\mbox{}
+\vfill
+\textbf{Versie: \latest}
+\newpage
+
+% Changes
+\begin{versionhistory}
+    \vhEntry{\latest}{<Date>}{<Author>}{<Notes>}
+\end{versionhistory}
+\newpage
+
+% Contents  
+\tableofcontents
+\newpage
+
+% STARRS
+% Example command:  \starrblock{Deelcompetentie}{Product [X, Y, \dots]}{Situatie}{Taak}{Activiteit}{Resultaat}{Reflectie}
+\section{Communicatief vermogen}{
+  \starrblock{Deelcompetentie}{Product [X, Y, \dots]}{Situatie \textit{TEST}}{Taak}{Activiteit}{Resultaat}{Reflectie}
+ }
+
+\section{Professioneel vakmanschap}{
+
+ }
+
+\section{Onderzoekend vermogen}{
+
+ }
+
+\section{Leervermogen}{
+
+ }
+
+\section{Beroepsethiek en maatschappelijke oriëntatie}{
+
+ }
+
+\section{Samenwerken}{
+
+ }
+% Bijlagen (foto's etc)
+\section{Bijlagen}{
+
+ }
+
+\end{document}
+
